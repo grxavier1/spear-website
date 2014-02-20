@@ -1,62 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Test Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Le styles -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
-    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
-     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    
+<!-- NAVBAR
+================================================== -->
   <body>
-     <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-    <!<div class="navbar navbar-fixed-top"
-      <div class="navbar-inner">
-        <!<div class="container">
-         <! <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <!<span class="icon-bar"></span>
-            <!<span class="icon-bar"></span>
-           <! <span class="icon-bar"></span>
-          <!</a>
-          <a class="brand" href="#">Project name</a>
-          <div class="nav-collapse">-->
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#live">Live</a></li>
-              <li><a href="#learn">Learn</a></li>
-              <li><a href="#earn">Earn</a></li>
-              <li><a href="#grow">Grow</a></li>
-              <li><a href="#resources">Resources</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Live</a></li>
+				<li><a href="#">Learn</a></li>
+				<li><a href="#">Earn</a></li>
+				<li><a href="#">Grow</a></li>
+				<li><a href="#">Resource</a></li>
+				<li><a href="#">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
-    <div class="container">
-      <!-- call to action -->
-      <div class="hero-unit">
-        <h1>SPEAR</h1>
-        <p> Website for Young African Males Living In Baltimore!</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+<!--jumbotron-->
+	<div class="jumbotron">
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
       </div>
-      <hr>
-      <footer>
-        <p>&copy; Gracie Xavier 2014</p>
-      </footer>
-    </div> <!-- /container -->
-    <!-- Le javascript
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+	</div><!--end of jambotron-->    <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
