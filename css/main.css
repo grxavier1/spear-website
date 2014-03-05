@@ -15,6 +15,9 @@ color: yellow;
 text-decoration: none;
 }
 
+h1 {font-family: font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+	                 color:blue;}
+
 h2 {font-family: Rockwell, "Courier New", Courier, Georgia,
 	                 Times, "Times New Roman", serif;
 	                 color:blue;}
